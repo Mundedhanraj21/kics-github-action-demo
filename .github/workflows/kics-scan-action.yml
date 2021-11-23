@@ -23,7 +23,7 @@ jobs:
         output_path: results
         ignore_on_exit: results # Just throws an error if the scan fails, not with invalid results
         output_formats: "json,html"
-        ci: true
+        verbose: true
     # Display the results in json format
     - name: Display kics results
       run: |
