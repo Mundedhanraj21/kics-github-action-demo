@@ -1,10 +1,10 @@
 name: kics-scan-action
+
 on:
   push:
     branches:
       - main
-  workflow:
-    - kics-scan-action
+  workflow_dispatch:
 
 jobs:
   kics-job:
