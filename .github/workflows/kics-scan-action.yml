@@ -28,13 +28,13 @@ jobs:
       run: |
         cat results/results.json
     # Upload results after scan
-    - uses: actions/upload-artifact@v2
     - name: Upload kics results.json
+      uses: actions/upload-artifact@v2
       with:
         name: results-json-${{ github.run_id }}
         path: results/results.json
-    - uses: actions/upload-artifact@v2
     - name: Upload kics results.html
+      uses: actions/upload-artifact@v2
       with:
         name: results-html-${{ github.run_id }}
         path: results/results.html
